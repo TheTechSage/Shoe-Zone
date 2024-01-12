@@ -1,0 +1,28 @@
+.btn {
+    display: flex;
+    min-width: 6.7rem;
+    padding: 1em 0.8em;
+    font-size: 0.9rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.primary_btn {
+    background-color: var(--black);
+    color: var(--white);
+}
+.outline_btn {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 5px;
+}
+.hover_border:hover, .hover_border:active {
+    border: 2px solid var(--black);
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 10px 10px 5px var(--gray);
+    transition: border 0.5s ease, box-shadow 0.3s ease;
+}
+
+/* ---- END OF CSS ---- */

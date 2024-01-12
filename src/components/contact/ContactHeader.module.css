@@ -1,0 +1,35 @@
+.contact_section_header {
+    max-width: 70vw;
+    margin: 0 auto;
+}
+.c_header_heading {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 800;
+    max-width: 80%;
+    word-spacing: 0.7rem;
+}
+.c_header_para {
+    font-weight: 500;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+/* ---- Media Queries ---- */
+@media (max-width: 1050px) {
+    .contact_section_header {
+        max-width: 85vw;
+    }
+}
+@media (max-width: 540px) {
+    .c_header_heading {
+        max-width: 90vw;
+        font-size: 2.5rem;
+        word-spacing: 0.5rem;
+    }
+    .c_header_para {
+        font-size: 1.1rem;
+    }
+}
+
+/* ---- END OF CSS ---- */

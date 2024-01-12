@@ -1,0 +1,131 @@
+.container {
+    display: flex;
+    max-width: 70vw;
+    margin: 3rem auto;
+    align-items: center;
+}
+.btn_group {
+    display: flex;
+    justify-content: space-between;
+}
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 50%;
+}
+.contact_image {
+    width: 50%;
+}
+#contact_image {
+    max-width: 100%;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+.form_control {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
+.form_control label {
+    position: absolute;
+    top: -13px;
+    left: 16px;
+    padding: 0 0.5rem;
+    font-size: 1.1rem;
+    background-color: var(--bg-light);
+    color: var(--black);
+    border: 1px solid;
+}
+#name, #email, #message {
+    padding: 1rem;
+    border: 1px solid var(--black);
+}
+#name, #email {
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+#message {
+    min-height: 7.5rem;
+    max-width: 100%;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+.entered_data_block {
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: var(--bg-dark);
+    color: var(--light-gray);
+    border: 3px solid var(--blue);
+    border-radius: 15px;
+}
+#data_heading {
+    margin: 1rem 0;
+    padding: 0 0.5rem;
+    color: var(--orange);
+    font-size: 2rem;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    text-align: center;
+    line-height: 3rem;
+    letter-spacing: 2px;
+}
+.entered_data {
+    padding: 5px 0;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    word-wrap: break-word;
+}
+
+/* ---- Media Queries ---- */
+
+@media (max-width: 1050px) {
+    .container {
+        max-width: 85vw;
+    }
+}
+@media (max-width: 800px) {
+    .container {
+        max-width: 70vw;
+        flex-direction: column-reverse;
+        margin: 1rem auto;
+    }
+    .contact_form {
+        width: 100%;
+    }
+    .contact_image{
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 80vw;
+    }
+    .form_control label {
+        font-size: 1rem;
+    }
+    #data_heading {
+        font-size: 1.5rem;
+    }
+    .entered_data {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 450px) {
+    .container {
+        max-width: 80vw;
+    }
+    #data_heading {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+/* ---- END OF CSS ---- */

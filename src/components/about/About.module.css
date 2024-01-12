@@ -1,0 +1,125 @@
+.container {
+    margin: 0;
+    padding: 0 2rem;
+}
+.heading {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-align: center;
+    margin: 0rem 0 3rem;
+}
+.full_section {
+    margin: 0 auto;
+    display: flex;
+    column-gap: 2rem;
+    max-width: 100%;
+}
+.section_1 {
+    margin: 0 auto;
+}
+.image {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 10px;
+}
+.section_2 {
+    padding: 1rem;
+    max-width: 50%;
+}
+.subheading {
+    margin: -2rem 0 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.small_title {
+    font-weight: 900;
+    text-decoration: underline;
+    color: var(--red);
+}
+.para {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    text-align: justify;
+    padding: 1rem;
+}
+.para_2{
+    margin: 2rem auto;
+}
+.text_highlight {
+    font-weight: 700;
+    color: var(--white);
+}
+
+/* ---- Media Queries ---- */
+
+@media (max-width: 1050px) {
+    .full_section {
+        display: block;
+    }
+    .section_1 {
+        float: left;
+        max-width: 60%;
+        padding: 0.8rem 3rem 1rem 1rem;
+    }
+    .section_1::after {
+        clear: both;
+    }
+    .section_2 {
+        padding: 0 0.5rem;
+        max-width: 100%;
+    }
+    .subheading {
+        margin: 0 2rem;
+        font-size: 2rem;
+    }
+    .para {
+        padding: 0;
+    }
+}
+@media (max-width: 850px) {
+    .full_section {
+        display: flex;
+        flex-direction: column;
+    }
+    .section_1 {
+        margin: 0 auto 2rem;
+        max-width: 80%;
+        padding: 0;
+    }
+    .section_1::after {
+        clear: none;
+    }
+    .image {
+        margin: 0 auto;
+    }
+    .section_2 {
+        max-width: 100%;
+        padding: 0;
+    }
+    .subheading {
+        margin: 1rem 0 2rem;
+        font-size: 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 0;
+    }
+    .section_1 {
+        max-width: 85%;
+    }
+    .section_2 {
+        padding: 2.5rem;
+    }
+}
+
+/* ---- END OF CSS ---- */

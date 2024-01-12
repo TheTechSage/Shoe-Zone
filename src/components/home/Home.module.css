@@ -1,0 +1,146 @@
+#hero_section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80vw;
+    margin: 0 auto;
+}
+.hero_content{
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    max-width: 40rem;
+}
+#hero_text {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 4.5rem;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+}
+.para {
+    font-weight: 600;
+    max-width: 30rem;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    text-align: justify;
+}
+.btn {
+    text-align: center;
+    border-radius: 0.35rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.hero_btn button {
+    font-size: 1.4rem; 
+}
+.shop_btn {
+    border: 2px solid transparent;
+    color: var(--white);
+    background: var(--red);
+    font-weight: 500;
+    padding: 0.3em 1em;
+}
+.shop_btn:hover, .shop_btn:active {
+    color: var(--red);
+    background: var(--white);
+    border: 2px solid transparent;
+}
+.category_btn {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--red);
+    margin-left: 2.5rem;
+    padding: 0.3em 1.268em;
+}
+.category_btn:hover, .category_btn:active {
+    color: var(--red);
+    border: 2px solid var(--white);
+} 
+div.shopping p {
+    font-size: 0.875rem;
+    margin-bottom: 0.5rem;
+}
+.brand_icons {
+    display: flex;
+    gap: 1.2rem;
+}
+.hero_image {
+    max-width: 80%;
+}
+#hero_img {
+    max-width: 130%;
+    display: block;
+    margin: auto;
+}
+
+
+/* ---- Media Queries ---- */
+@media (max-width: 1000px) {
+    .hero_content {
+        max-width: 50%;
+    }
+    #hero_section {
+        max-width: 90vw;
+    }
+    #hero_text {
+        font-size: 3.5rem;
+        line-height: 4rem;
+    }
+    .hero_image {
+        max-width: 50%;
+    }
+    .hero_image img {
+        margin: 0 auto;
+        max-width: 130%;
+    }
+}
+
+@media (max-width: 800px) {
+    #hero_section {
+        flex-wrap: wrap;
+    }
+    .hero_content {
+        max-width: 100%;
+    }
+    #hero_text {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .para {
+        max-width: 100%;
+    }
+    .hero_image  {
+        max-width: 100%;
+    }
+    .hero_image img {
+        display: inline-block;
+        margin: 0 auto;
+        max-width: 110%;
+    }
+}
+
+@media (max-width: 550px) {
+    #hero_text {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
+
+@media (max-width: 440px) {
+    .hero_btn {
+        margin-top: 1rem;
+    }
+    .hero_btn button {
+        font-size: 1rem; 
+    }
+    .category_btn {
+        margin-top: 0.5rem;
+        margin-left: 0.5rem;
+    }
+}
+
+/* ----  END of CSS ---- */

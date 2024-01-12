@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --gray: #3d3d3d;
+  --light-gray: #949494;
+  --black: #161616;
+  --white: #ffffff;
+  --red: #c5000d;
+  --green: #009600;
+  --lime-green: #00ff00;
+  --blue: #0380f5;
+  --dark-blue: #1313dd;
+  --turquoise-blue: #40e0d0;
+  --orange: #ff8800;
+  --dim-orange: #e6840d;
+  --yellow: #ffff00;
+  --dim-yellow: #c2c200;
+
+  --bg-light: #bb9393;
+  --bg-dark: #1a1a1a;
+  --bg-lighter: #ad9393;
+  --section-bg-light: rgb(222, 187, 255);
+  --image-bg-light: rgb(223, 211, 211);
+
+  color-scheme: light dark;
+  color: var(--black);
+  background-color: var(--bg-lighter);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-margin-collapse: discard;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+#root {
+  overflow-x: hidden;
+}
+a {
+  color: unset;
+}
+.bold-700 {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+/* ---- Global Classes ---- */
+.active-border-global {
+  border: 1px solid var(--black);
+}
+.color-1-global {
+  color: var(--red);
+}
+.color-2-global {
+  color: var(--black);
+}
+.horizontal-rule-global {
+  display: block;
+  color: var(--bg-light);
+}
+.card-border-global {
+  border: 1px solid var(--gray);
+  box-shadow: 5px 5px 5px var(--black);
+}
+.card-border-global:hover, .card-border-global:active {
+  background-color: var(--dim-orange);
+  box-shadow: 10px 10px 20px var(--black);
+}
+.button-global {
+  border: 1px solid var(--black);
+  color: var(--black);
+  text-decoration: none;
+}
+.button-global:hover, .button-global:active {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  border: 1px solid var(--white);
+} 
+
+/* ----- Dark Theme ----- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--bg-dark);
+    color: var(--light-gray);
+  }
+  .color-2-global {
+    color: var(--light-gray);
+    border: 1px solid transparent;
+  }
+  .active-border-global {
+    border: 1px solid var(--white);
+  }
+  .horizontal-rule-global {
+    color: var(--gray);
+  }
+  .card-border-global {
+    border: 1px solid var(--light-gray);
+    box-shadow: 5px 5px 5px var(--gray);
+  }
+  .card-border-global:hover, .card-border-global:active {
+    background-color: var(--dim-yellow);
+    color: var(--black);
+    box-shadow: 10px 10px 20px var(--light-gray);
+    .button-global {
+      border: 1px solid var(--black);
+      color: var(--black);
+    }
+    .button-global:hover, .button-global:active {
+      color: var(--white);
+      border: 1px solid var(--white);
+    }
+  }
+  .button-global {
+    border: 1px solid var(--light-gray);
+    color: var(--light-gray);
+  }
+  .button-global:hover, .button-global:active {
+    background-color: var(--dark-blue);
+  }
+}
+
+/* ---- END OF CSS ---- */

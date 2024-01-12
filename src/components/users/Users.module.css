@@ -1,0 +1,162 @@
+/* ---- Classes for both UserListPage & SingleUserPage ---- */
+
+.heading {
+  margin: 2rem 0;
+  font-weight: 800;
+  font-size: 3rem;
+  text-align: center;
+}
+.text {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.dummy_link {
+  max-width: fit-content;
+  background-color: var(--bg-dark);
+  color: var(--turquoise-blue);
+  padding: 1px 8px;
+}
+.dummy_link::selection {
+  color: var(--red);
+  background: var(--yellow);
+}
+.button {
+  display: block;
+  max-width: fit-content;
+  margin: 1rem auto;
+  padding: 0.5em 2em;
+  text-align: center;
+  border-radius: 0.35rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+.button:hover, .button:active {
+  transition: border 0.5s ease, color 0.5s ease;
+}
+
+
+/* ------ UserListPage ------ */
+
+.TnC {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 1rem;
+}
+.user_list {
+  display: flex;
+  padding: 1rem;
+  flex-flow: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  text-align: center;
+  justify-content: center;
+}
+.custom_card {
+  padding: 1rem 0;
+  border-radius: 10px;
+}
+.custom_card:hover, .custom_card:active {
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  transition: background-color 0.9s linear, box-shadow 0.5s ease-in-out, border-radius 0.5s ease-in-out;
+}
+.small_image {
+  max-width: 30%;
+  margin: 0 auto;
+  background-color: var(--bg-dark);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+
+/* ------ SingleUserPage ------ */
+
+.large_body {
+  display: flex;
+  justify-content: center;
+  max-width: 80%;
+  margin: 3rem auto;
+  padding: 4rem 3.5rem;
+  border: 1px solid var(--black);
+  border-radius: 15px;
+  background-color: var(--section-bg-light);
+}
+.section_1 {
+  max-width: 30%;
+  margin-right: 1rem;
+}
+.large_image {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: 2px solid var(--light-gray);
+  border-radius: 50%;
+  background-color: var(--image-bg-light);
+}
+.section_2{
+  flex: 1;
+}
+.underline {
+  max-width: 90%;
+  border-bottom: 1px solid var(--light-gray);
+  padding: 5px 0;
+  margin-top: 1rem;
+}
+
+/* ----- Media Queries ----- */
+@media (prefers-color-scheme: dark) {
+  .large_body {
+    background-color: var(--gray);
+    color: var(--white);
+  }
+  .large_image {
+    background-color: var(--bg-dark);
+  }
+}
+@media screen and (max-width:1050px) {
+  .large_body {
+    max-width: 85%;
+    padding: 3rem 3.5rem;
+  }
+  .section_1 {
+    max-width: 35%;
+  }
+  .underline {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width:840px) {
+  .large_body {
+    max-width: 90%;
+    margin: 2rem auto;
+    padding: 3rem 2rem;
+  }
+  .section_1 {
+    max-width: 30%;
+  }
+}
+@media screen and (max-width:560px) {
+  .heading {
+    font-size: 2.5rem;
+    padding: 0 1rem;
+  }
+  .TnC {
+    display: block;
+    margin: 0 auto;
+  }
+  .large_body {
+    flex-direction: column;
+    min-width: 90%;
+    padding: 3rem 2rem;
+  }
+  .section_1 {
+    max-width: 90%;
+    margin: 0 auto 1rem;
+  }
+  .large_image {
+    max-width: 70%;
+    margin: 1rem auto;
+  }
+}
+
+/* ---- END OF CSS ---- */

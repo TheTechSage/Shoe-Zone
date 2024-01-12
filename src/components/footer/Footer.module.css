@@ -1,0 +1,76 @@
+.horizontal_rule {
+    margin: 4rem 0;
+}
+.footer_section_1 {
+    display: flex;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+.footer_section_2 {
+    display: flex;
+    margin: auto;
+}
+#logo_2 {
+    background-color: var(--white);
+    border-radius: 25px;
+    padding: 0.2em 0.4em;
+    margin: 1rem auto 0;
+}
+.subheading_section {
+    margin: auto 3rem 0.5rem;
+    text-transform: uppercase;
+}
+.subheading_section > h2 {
+    padding: 0 0.5rem;
+}
+.subheading_list_item {
+    list-style: none;
+    padding: 0.5rem 0;
+}
+.subheading_links {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+.subheading_links:hover, .subheading_links:active {
+    background-color: var(--orange);
+    color: var(--black);
+    border-radius: 5px;
+}
+
+@media (max-width: 910px) {
+    .subheading_section {
+        margin: auto 1rem 0.5rem;
+    }
+    .subheading_section > h2 {
+        padding: 0 0.3rem;
+    }
+    .subheading_links {
+        padding: 0.3rem 0.5rem;
+    }
+}
+@media (max-width: 710px) {
+    .footer_section_1, .footer_section_2 {
+        flex-direction: column;
+    }
+    .footer_section_1{
+    padding: 1rem 2rem;
+    }
+    .footer_section_2 {
+        margin: 2rem 0rem;
+    }
+    .subheading_section {
+        margin: 0 0 1rem;
+    }
+    .subheading_list_item {
+        padding: 0.2rem 1rem;
+    }
+    .subheading_links{
+        display: block;
+        width: 100%;
+    }
+    .subheading_links:hover, .subheading_links:active {
+        padding: 0.3rem 1rem;
+    }
+}
+
+/* ---- END OF CSS ---- */
