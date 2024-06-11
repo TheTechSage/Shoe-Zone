@@ -60,7 +60,7 @@ export default function UserListPage(props) {
                                 >
                                     @{data.username}
                                 </a>
-                                <p className={userStyles.text}>{data.email}</p>
+                                <p className={userStyles.text}>{data.company.title}</p>
                                 <p className={userStyles.text}>{data.phone}</p>
                                 <Link
                                     to={`./user/${data.id}`}
