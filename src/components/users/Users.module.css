@@ -54,6 +54,7 @@
 .custom_card {
   padding: 1rem 0;
   border-radius: 10px;
+  width: 250px;
 }
 .custom_card:hover, .custom_card:active {
   border: 1px solid var(--black);
