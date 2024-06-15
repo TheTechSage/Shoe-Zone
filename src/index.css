@@ -50,6 +50,7 @@ body {
 }
 a {
   color: unset;
+  text-decoration: none;
 }
 .bold-700 {
   font-weight: 700;
