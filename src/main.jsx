@@ -14,6 +14,8 @@ import Users from "./components/users/Users";
 import Contact from "./components/contact/Contact";
 import UserListPage from "./components/users/UserListPage";
 import SingleUserPage from "./components/users/SingleUserPage";
+import Signup from "./components/login-signup/Signup";
+import Login from "./components/login-signup/Login";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -25,6 +27,8 @@ const router = createBrowserRouter(
                 <Route exact path="user/:id" element={<SingleUserPage />} />
             </Route>
             <Route path="contact" element={<Contact />} />
+            <Route path="login" element={<Login />} />
+            <Route path="signup" element={<Signup />} />
         </Route>
     )
 );
