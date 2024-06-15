@@ -58,7 +58,7 @@
 }
 
 /* ---- Media Queries ---- */
-@media (max-width: 950px) {
+@media (max-width: 1000px) {
     #menu {
         gap: 1rem;
     }
@@ -67,7 +67,7 @@
         padding: 0.3rem 0.6rem;
     }
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     #nav {
         padding: 2rem 2rem 1rem;
     }
@@ -85,7 +85,7 @@
         padding: 0.5em 1em;
         display: block;
         max-width: 100%;
-        margin: 0.2rem auto;
+        margin: 0.2rem 2rem;
     }
     .horizontal_rule {
         margin: 4rem 0;
