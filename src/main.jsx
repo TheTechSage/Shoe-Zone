@@ -14,8 +14,8 @@ import Users from "./components/users/Users";
 import Contact from "./components/contact/Contact";
 import UserListPage from "./components/users/UserListPage";
 import SingleUserPage from "./components/users/SingleUserPage";
-import Signup from "./components/login-signup/Signup";
 import Login from "./components/login-signup/Login";
+import Signup from "./components/login-signup/Signup";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
