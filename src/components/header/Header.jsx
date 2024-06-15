@@ -85,7 +85,9 @@ export default function Header() {
                 <button
                     className={`${headerStyles.login_btn} ${headerStyles.btn}`}
                 >
-                    Login
+                    <NavLink to="/login">
+                        Login
+                    </NavLink>
                 </button>
             </nav>
 
