@@ -1,10 +1,10 @@
-.dataSubmit {
+/* .dataSubmit {
     display: block;
     color: var(--green);
 }
 .dataNotSubmit {
     display: none;
-}
+} */
 
 .form {
     display: flex;
