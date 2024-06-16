@@ -2,9 +2,13 @@
 
 :root {
   --gray: #3d3d3d;
+  --gray-2: rgba(105, 105, 105, 0.4);
+  --gray-3: #333;
   --light-gray: #949494;
   --black: #161616;
   --white: #ffffff;
+  --white-light: rgba(255, 255, 255, 0.7);
+  --white-lighter: rgba(255, 255, 255, 0.5);
   --red: #c5000d;
   --green: #009600;
   --lime-green: #00ff00;
