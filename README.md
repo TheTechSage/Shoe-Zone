@@ -11,7 +11,7 @@ Currently, two official plugins are available:
 
 -> To run the project you should have Node.js installed.
 
--> Then clone/download the project locally & change your current directory to the Shoe-Zone directory in your terminal by using <code>cd</code> command, then :
+-> Then clone/download the project locally & change your current directory to the 'Shoe-Zone' directory in your terminal by using <code>cd</code> command, then :
 <code>npm i</code> or <code>npm install</code> to install all dependencies.
 
 The app has light and dark themes which depends on your browser's selected theme. 
