@@ -7,10 +7,10 @@ export default function Home() {
             <div className={homeStyles.container}>
 
                 <div className={homeStyles.overlay}>
-                    <div className={homeStyles.overlay_message_1}>
+                    <div className={homeStyles.overlay_container}>
                         <div className={homeStyles.container}>
                             <button className={homeStyles.overlay_button}>X</button>
-                            <div className={homeStyles.overlay_message_2}>
+                            <div className={homeStyles.overlay_message}>
                                 This feature is not available yet.
                             </div>
                         </div>
