@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 export default function Home() {
     return (
         <>
+            <div>
+            {/*
             <div className={homeStyles.container}>
 
                 <div className={homeStyles.overlay}>
@@ -15,10 +17,11 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
+                */}
 
                 
-                <div id={homeStyles.hero_section} className={homeStyles.container}>
+                <div id={homeStyles.hero_section}>
                     <div className={homeStyles.hero_content}>
                         <h1 id={homeStyles.hero_text}>YOUR FEET DESERVE THE BEST</h1>
                         <p className={homeStyles.para}>
