@@ -10,7 +10,7 @@ export default function About() {
                 >
                     <div className={aboutStyles.section_1}>
                         <img
-                            src="images/customer-satisfaction.png"
+                            src="images/customer-satisfaction.jpg"
                             alt="Customer Satisfaction image"
                             className={aboutStyles.image}
                         />
